@@ -1,0 +1,194 @@
+/* Importing Google Fonts - Montserrat */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #e6ffec;
+}
+
+#root {
+  width: 100%;
+}
+
+.login-container {
+  margin: 0 auto;
+  max-width: 410px;
+  padding: 2rem 1.5rem;
+  border-radius: 0.6rem;
+  background: #ffffff;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.09);
+  border: 1px solid #d1f5d6;
+}
+
+.login-container .form-title {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #075e54;
+  margin-bottom: 1.87rem;
+}
+
+.login-container .social-login {
+  display: flex;
+  gap: 1.31rem;
+}
+
+.social-login .social-button {
+  display: flex;
+  gap: 0.81rem;
+  width: 100%;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 0.75rem 0;
+  border-radius: 0.31rem;
+  align-items: center;
+  justify-content: center;
+  background: #f0fff7;
+  border: 1px solid #aee4c4;
+  transition: 0.3s ease;
+}
+
+.social-login .social-button:hover {
+  border-color: #25D366;
+  background: #e9ffee;
+}
+
+.social-login .social-button .social-icon {
+  width: 23px;
+}
+
+.login-container .separator {
+  position: relative;
+  margin: 1.5rem 0;
+  text-align: center;
+}
+
+.login-container .separator span {
+  z-index: 1;
+  font-weight: 600;
+  color: #128C7E;
+  background: white;
+  padding: 0 0.9rem;
+}
+
+.login-container .separator::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  height: 1px;
+  width: 100%;
+  background: #b7e4c7;
+}
+
+.login-form .input-wrapper {
+  height: 54px;
+  width: 100%;
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+.login-form .input-field {
+  width: 100%;
+  height: 100%;
+  outline: none;
+  font-size: 1.06rem;
+  border-radius: 0.31rem;
+  border: 1px solid #c7e9d0;
+  padding: 0px 1.25rem 0 3.12rem;
+  transition: 0.2s ease;
+}
+
+.login-form .input-field:focus {
+  border-color: #25D366;
+  box-shadow: 0 0 5px rgba(37, 211, 102, 0.4);
+}
+
+.login-form .input-field::placeholder {
+  color: #7bb798;
+}
+
+.login-form .input-wrapper i {
+  position: absolute;
+  top: 50%;
+  height: 100%;
+  display: flex;
+  color: #6fa584;
+  align-items: center;
+  transform: translateY(-50%);
+  transition: 0.2s ease;
+}
+
+.login-form .input-wrapper i:not(.eye-icon) {
+  left: 0.93rem;
+  pointer-events: none;
+}
+
+.login-form .input-field:focus ~ i:not(.eye-icon) {
+  color: #128C7E;
+}
+
+.login-form .input-wrapper i.eye-icon {
+  display: none;
+  right: 0.93rem;
+  color: #128C7E;
+  cursor: pointer;
+  font-size: 1.25rem;
+}
+
+.login-form .input-field:valid ~ .eye-icon {
+  display: flex;
+}
+
+.login-form .forgot-password-link {
+  display: block;
+  width: fit-content;
+  margin-top: -0.44rem;
+  color: #128C7E;
+}
+
+.login-form .login-button {
+  border: none;
+  outline: none;
+  width: 100%;
+  height: 54px;
+  color: #fff;
+  font-size: 1.125rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 2.19rem;
+  border-radius: 0.31rem;
+  background: #25D366;
+  transition: 0.3s ease;
+}
+
+.login-form .login-button:hover {
+  background: #1ebe56;
+}
+
+.login-container .signup-prompt {
+  text-align: center;
+  font-size: 1.06rem;
+  font-weight: 500;
+  margin: 1.75rem 0 0.31rem;
+}
+
+.login-container a {
+  color: #128C7E;
+  font-weight: 600;
+}
+
+.login-container a:hover {
+  text-decoration: underline;
+}

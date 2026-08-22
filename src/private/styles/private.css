@@ -1,0 +1,9 @@
+.chat-bubble {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    max-width: 300px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 12px;
+}

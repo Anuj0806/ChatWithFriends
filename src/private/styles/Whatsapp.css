@@ -1,0 +1,24 @@
+.whatsapp-container { display: flex; height: 99vh; background: #ece5dd; font-family: Arial; }
+.sidebar { width: 30%; background: white; border-right: 1px solid #ddd; overflow-y: auto; }
+.sidebar-header { padding: 20px; background: #128c7e; color: white; font-size: 20px; font-weight: bold; }
+.contact { display: flex; align-items: center; padding: 12px; cursor: pointer; border-bottom: 1px solid #eee; }
+.contact:hover { background: #f5f5f5; }
+.active-contact { background: #d9fdd3; }
+.avatar { width: 42px; height: 42px; background: #128c7e; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 18px; margin-right: 12px; }
+.avatar.big { width: 50px; height: 50px; font-size: 22px; }
+.contact-info { flex: 1; }
+.contact-name { font-weight: bold; }
+.last-msg { font-size: 12px; color: #777; }
+.chat-section { width: 70%; display: flex; flex-direction: column; }
+.chat-header { background: #128c7e; color: white; padding: 14px; display: flex; align-items: center; gap: 12px; }
+.chat-name { font-weight: bold; }
+.online-status { font-size: 12px; opacity: 0.8; }
+.chat-box { flex: 1; padding: 20px; overflow-y: auto; background: #efeae2; }
+.message { max-width: 60%; padding: 10px 14px; margin-bottom: 10px; border-radius: 10px; position: relative; font-size: 15px; }
+.sent { margin-left: auto; background: #d9fdd3; }
+.received { background: white; }
+.time { font-size: 11px; color: #555; float: right; margin-top: 5px; }
+.chat-input { display: flex; padding: 10px; background: #f0f0f0; }
+.chat-input input { flex: 1; padding: 12px; border-radius: 20px; border: 1px solid #ccc; outline: none; }
+.chat-input button { margin-left: 10px; padding: 12px 20px; border: none; border-radius: 20px; background: #128c7e; color: white; cursor: pointer; }
+.chat-input button:hover { background: #0d6d62; }
