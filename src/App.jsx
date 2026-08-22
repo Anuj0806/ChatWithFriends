@@ -1,4 +1,6 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+// import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+// To this:
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import LoginPage from "./private/pages/LoginPage";
 import HomePage from "./private/pages/HomePage";
 import SignupPage from "./private/pages/SignupPage";
@@ -8,7 +10,7 @@ import PrivateChat from "./private/pages/PrivateChat";
 
 function App() {
   return (
-    <Router basename="/ChatWithFriends">
+    <Router>
       <Routes>
         <Route path="/" element={<LoginPage />} />
         <Route path="/home" element={<HomePage />} />
