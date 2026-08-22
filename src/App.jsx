@@ -8,7 +8,7 @@ import PrivateChat from "./private/pages/PrivateChat";
 
 function App() {
   return (
-    <Router>
+    <Router basename="/ChatWithFriends">
       <Routes>
         <Route path="/" element={<LoginPage />} />
         <Route path="/home" element={<HomePage />} />
